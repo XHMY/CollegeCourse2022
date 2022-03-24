@@ -31,9 +31,9 @@ object Score {
 
       }
       total = total+sum
-      println(f"Now, the best score is ${max} , worst score is ${min}, average${sum/people}%5.2f")
+      println(f"Now, the best score is ${max} , worst score is ${min}, average ${sum/people}%5.2f")
     }
-    println(f"Grade's best score is ${ma}, worst score is ${mi} , average${total/total_people}%5.2f ")
+    println(f"Grade's best score is ${ma}, worst score is ${mi} , average ${total/total_people}%5.2f ")
 
 
 
