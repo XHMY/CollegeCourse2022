@@ -2,4 +2,5 @@
 *.class
 *.xml
 RealTimeCompute/.DS_Store
-.DS_Store
+*/.DS_Store
+*/ipynb_checkpoints/*
