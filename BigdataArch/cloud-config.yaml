@@ -1,0 +1,32 @@
+users:
+  - name: yokey
+    groups: users, admin
+    lock_passwd: true
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDIUkVRUlHYPHea7F2JIlpnSikmlL6Zi2HlAuIMaZPOaNXt3fqPU8m02/RVwiZEFqyA1rvEVUtZdRJInOii6vyK89jproI4BxTNQgyTPcdUdNwkRynj6mlrdNwYsUEezGgszziFrS2q4FM38G6ZOtwrNtx+cJFLsYLanjoYF/tfr8naxJllxlAwN32wufWTaYx+a5KTn3eKrkjyfsrAeeeZ5gN5awUPJgVtgAQGsP9UuUg1Pcmh8dRPZzrv3/uxgpaTDTW/2u2P4UtS8QoxdgP8pNyECtKx13AnJkHKd2nCm+x1W7dsQkeWLNvVe17/L47rOthemaKIw4WQq3iKv4KYd8k15NfgjRv0BOofC/ORkpx8r6DTXgwE5vuc3naQshtrsgR0rGVfAaDO8bkzQH4fMNAcqAhMaheZcLw3ijCNMyLv0z2EaBVOib2oecOknjcKDUKDzZNgYR31N5fUpkBq66EX6IW2/nHJRMZT6rhos0jaBd10P93ZGht3UxgLlnc= yokey@ExpM.local
+
+write_files:
+   - path: "/etc/apt/sources.list"
+     append: false
+     content: |
+       # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+       deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+       # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+       deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+       # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+       deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+       # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+       deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+       # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+
+packages:
+  - openjdk-11-jre-headless
+
+write_files:
+  - path: "/home/yokey/.bashrc"
+    append: true
+    content: |
+      export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-arm64"
+
