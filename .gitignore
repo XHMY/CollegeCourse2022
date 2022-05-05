@@ -7,3 +7,5 @@ RealTimeCompute/.DS_Store
 **/*.ipynb_checkpoints/
 */.ipynb_checkpoints/*
 *.zip
+.DS_Store
+*.lst
