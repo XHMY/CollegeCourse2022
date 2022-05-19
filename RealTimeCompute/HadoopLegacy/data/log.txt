@@ -1,0 +1,166 @@
+/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home/bin/java -javaagent:/Applications/JetBrains/apps/IDEA-U/ch-0/213.7172.25/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=61637:/Applications/JetBrains/apps/IDEA-U/ch-0/213.7172.25/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/yokey/Code/CollegeCourse2022/RealTimeCompute/HadoopLegacy/target/classes:/Users/yokey/.m2/repository/org/apache/hadoop/hadoop-client/3.3.2/hadoop-client-3.3.2.jar:/Users/yokey/.m2/repository/org/apache/hadoop/hadoop-common/3.3.2/hadoop-common-3.3.2.jar:/Users/yokey/.m2/repository/org/apache/hadoop/thirdparty/hadoop-shaded-protobuf_3_7/1.1.1/hadoop-shaded-protobuf_3_7-1.1.1.jar:/Users/yokey/.m2/repository/org/apache/hadoop/thirdparty/hadoop-shaded-guava/1.1.1/hadoop-shaded-guava-1.1.1.jar:/Users/yokey/.m2/repository/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar:/Users/yokey/.m2/repository/com/google/guava/failureaccess/1.0/failureaccess-1.0.jar:/Users/yokey/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/yokey/.m2/repository/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar:/Users/yokey/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/yokey/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.jar:/Users/yokey/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar:/Users/yokey/.m2/repository/org/apache/commons/commons-math3/3.1.1/commons-math3-3.1.1.jar:/Users/yokey/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/yokey/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/yokey/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/yokey/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/yokey/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar:/Users/yokey/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/yokey/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar:/Users/yokey/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.43.v20210629/jetty-servlet-9.4.43.v20210629.jar:/Users/yokey/.m2/repository/org/eclipse/jetty/jetty-security/9.4.43.v20210629/jetty-security-9.4.43.v20210629.jar:/Users/yokey/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.43.v20210629/jetty-util-ajax-9.4.43.v20210629.jar:/Users/yokey/.m2/repository/org/eclipse/jetty/jetty-webapp/9.4.43.v20210629/jetty-webapp-9.4.43.v20210629.jar:/Users/yokey/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.43.v20210629/jetty-xml-9.4.43.v20210629.jar:/Users/yokey/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar:/Users/yokey/.m2/repository/com/sun/jersey/jersey-servlet/1.19/jersey-servlet-1.19.jar:/Users/yokey/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/yokey/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/yokey/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/yokey/.m2/repository/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1.jar:/Users/yokey/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/yokey/.m2/repository/org/apache/commons/commons-text/1.4/commons-text-1.4.jar:/Users/yokey/.m2/repository/org/apache/avro/avro/1.7.7/avro-1.7.7.jar:/Users/yokey/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar:/Users/yokey/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar:/Users/yokey/.m2/repository/com/thoughtworks/paranamer/paranamer/2.3/paranamer-2.3.jar:/Users/yokey/.m2/repository/com/google/re2j/re2j/1.1/re2j-1.1.jar:/Users/yokey/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/yokey/.m2/repository/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar:/Users/yokey/.m2/repository/org/apache/hadoop/hadoop-auth/3.3.2/hadoop-auth-3.3.2.jar:/Users/yokey/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.8.1/nimbus-jose-jwt-9.8.1.jar:/Users/yokey/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/Users/yokey/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/Users/yokey/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/Users/yokey/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/Users/yokey/.m2/repository/org/apache/curator/curator-framework/4.2.0/curator-framework-4.2.0.jar:/Users/yokey/.m2/repository/org/apache/kerby/kerb-simplekdc/1.0.1/kerb-simplekdc-1.0.1.jar:/Users/yokey/.m2/repository/org/apache/kerby/kerb-client/1.0.1/kerb-client-1.0.1.jar:/Users/yokey/.m2/repository/org/apache/kerby/kerby-config/1.0.1/kerby-config-1.0.1.jar:/Users/yokey/.m2/repository/org/apache/kerby/kerb-common/1.0.1/kerb-common-1.0.1.jar:/Users/yokey/.m2/repository/org/apache/kerby/kerb-crypto/1.0.1/kerb-crypto-1.0.1.jar:/Users/yokey/.m2/repository/org/apache/kerby/kerb-util/1.0.1/kerb-util-1.0.1.jar:/Users/yokey/.m2/repository/org/apache/kerby/token-provider/1.0.1/token-provider-1.0.1.jar:/Users/yokey/.m2/repository/org/apache/kerby/kerb-admin/1.0.1/kerb-admin-1.0.1.jar:/Users/yokey/.m2/repository/org/apache/kerby/kerb-server/1.0.1/kerb-server-1.0.1.jar:/Users/yokey/.m2/repository/org/apache/kerby/kerb-identity/1.0.1/kerb-identity-1.0.1.jar:/Users/yokey/.m2/repository/org/apache/kerby/kerby-xdr/1.0.1/kerby-xdr-1.0.1.jar:/Users/yokey/.m2/repository/org/apache/curator/curator-client/4.2.0/curator-client-4.2.0.jar:/Users/yokey/.m2/repository/org/apache/curator/curator-recipes/4.2.0/curator-recipes-4.2.0.jar:/Users/yokey/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/yokey/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/yokey/.m2/repository/org/apache/kerby/kerb-core/1.0.1/kerb-core-1.0.1.jar:/Users/yokey/.m2/repository/org/apache/kerby/kerby-pkix/1.0.1/kerby-pkix-1.0.1.jar:/Users/yokey/.m2/repository/org/apache/kerby/kerby-asn1/1.0.1/kerby-asn1-1.0.1.jar:/Users/yokey/.m2/repository/org/apache/kerby/kerby-util/1.0.1/kerby-util-1.0.1.jar:/Users/yokey/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar:/Users/yokey/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar:/Users/yokey/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar:/Users/yokey/.m2/repository/com/fasterxml/woodstox/woodstox-core/5.3.0/woodstox-core-5.3.0.jar:/Users/yokey/.m2/repository/dnsjava/dnsjava/2.1.7/dnsjava-2.1.7.jar:/Users/yokey/.m2/repository/org/xerial/snappy/snappy-java/1.1.8.2/snappy-java-1.1.8.2.jar:/Users/yokey/.m2/repository/org/apache/hadoop/hadoop-hdfs-client/3.3.2/hadoop-hdfs-client-3.3.2.jar:/Users/yokey/.m2/repository/com/squareup/okhttp/okhttp/2.7.5/okhttp-2.7.5.jar:/Users/yokey/.m2/repository/com/squareup/okio/okio/1.6.0/okio-1.6.0.jar:/Users/yokey/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.0/jackson-annotations-2.13.0.jar:/Users/yokey/.m2/repository/org/apache/hadoop/hadoop-yarn-api/3.3.2/hadoop-yarn-api-3.3.2.jar:/Users/yokey/.m2/repository/javax/xml/bind/jaxb-api/2.2.11/jaxb-api-2.2.11.jar:/Users/yokey/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.1.1/javax.ws.rs-api-2.1.1.jar:/Users/yokey/.m2/repository/org/apache/hadoop/hadoop-yarn-client/3.3.2/hadoop-yarn-client-3.3.2.jar:/Users/yokey/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.43.v20210629/websocket-client-9.4.43.v20210629.jar:/Users/yokey/.m2/repository/org/eclipse/jetty/jetty-client/9.4.43.v20210629/jetty-client-9.4.43.v20210629.jar:/Users/yokey/.m2/repository/org/eclipse/jetty/jetty-http/9.4.43.v20210629/jetty-http-9.4.43.v20210629.jar:/Users/yokey/.m2/repository/org/eclipse/jetty/jetty-util/9.4.43.v20210629/jetty-util-9.4.43.v20210629.jar:/Users/yokey/.m2/repository/org/eclipse/jetty/jetty-io/9.4.43.v20210629/jetty-io-9.4.43.v20210629.jar:/Users/yokey/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.43.v20210629/websocket-common-9.4.43.v20210629.jar:/Users/yokey/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.43.v20210629/websocket-api-9.4.43.v20210629.jar:/Users/yokey/.m2/repository/org/jline/jline/3.9.0/jline-3.9.0.jar:/Users/yokey/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/3.3.2/hadoop-mapreduce-client-core-3.3.2.jar:/Users/yokey/.m2/repository/org/apache/hadoop/hadoop-yarn-common/3.3.2/hadoop-yarn-common-3.3.2.jar:/Users/yokey/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/yokey/.m2/repository/com/sun/jersey/jersey-core/1.19/jersey-core-1.19.jar:/Users/yokey/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar:/Users/yokey/.m2/repository/com/sun/jersey/jersey-client/1.19/jersey-client-1.19.jar:/Users/yokey/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.13.0/jackson-module-jaxb-annotations-2.13.0.jar:/Users/yokey/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/yokey/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.13.0/jackson-jaxrs-json-provider-2.13.0.jar:/Users/yokey/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.13.0/jackson-jaxrs-base-2.13.0.jar:/Users/yokey/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-jobclient/3.3.2/hadoop-mapreduce-client-jobclient-3.3.2.jar:/Users/yokey/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-common/3.3.2/hadoop-mapreduce-client-common-3.3.2.jar:/Users/yokey/.m2/repository/org/apache/hadoop/hadoop-annotations/3.3.2/hadoop-annotations-3.3.2.jar:/Users/yokey/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/yokey/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar WordCount /Users/yokey/Code/CollegeCourse2022/RealTimeCompute/HadoopLegacy/data/submit_v2.3.txt /Users/yokey/Code/CollegeCourse2022/RealTimeCompute/HadoopLegacy/data/output
+[main] WARN org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[main] WARN org.apache.hadoop.metrics2.impl.MetricsConfig - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+[main] INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl - Scheduled Metric snapshot period at 10 second(s).
+[main] INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl - JobTracker metrics system started
+[main] WARN org.apache.hadoop.mapreduce.JobResourceUploader - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+[main] WARN org.apache.hadoop.mapreduce.JobResourceUploader - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+[main] INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input files to process : 1
+[main] INFO org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+[main] INFO org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_local919380665_0001
+[main] INFO org.apache.hadoop.mapreduce.JobSubmitter - Executing with tokens: []
+[main] INFO org.apache.hadoop.mapreduce.Job - The url to track the job: http://localhost:8080/
+[main] INFO org.apache.hadoop.mapreduce.Job - Running job: job_local919380665_0001
+[Thread-19] INFO org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter set in config null
+[Thread-19] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 2
+[Thread-19] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[Thread-19] INFO org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+[Thread-19] INFO org.apache.hadoop.mapred.LocalJobRunner - Waiting for map tasks
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local919380665_0001_m_000000_0
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 2
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.yarn.util.ProcfsBasedProcessTree - ProcfsBasedProcessTree currently is supported only on Linux.
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : null
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Processing split: file:/Users/yokey/Code/CollegeCourse2022/RealTimeCompute/HadoopLegacy/data/submit_v2.3.txt:0+321335
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - (EQUATOR) 0 kvi 26214396(104857584)
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - mapreduce.task.io.sort.mb: 100
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - soft limit at 83886080
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - bufstart = 0; bufvoid = 104857600
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - kvstart = 26214396; length = 6553600
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner -
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Starting flush of map output
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Spilling map output
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - bufstart = 0; bufend = 467279; bufvoid = 104857600
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - kvstart = 26214396(104857584); kvend = 26068456(104273824); length = 145941/6553600
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Finished spill 0
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task - Task:attempt_local919380665_0001_m_000000_0 is done. And is in the process of committing
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - map
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task - Task 'attempt_local919380665_0001_m_000000_0' done.
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task - Final Counters for attempt_local919380665_0001_m_000000_0: Counters: 18
+	File System Counters
+		FILE: Number of bytes read=321547
+		FILE: Number of bytes written=494621
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=4000
+		Map output records=36486
+		Map output bytes=467279
+		Map output materialized bytes=80308
+		Input split bytes=155
+		Combine input records=36486
+		Combine output records=4019
+		Spilled Records=4019
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=6
+		Total committed heap usage (bytes)=268435456
+	File Input Format Counters
+		Bytes Read=321335
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - Finishing task: attempt_local919380665_0001_m_000000_0
+[Thread-19] INFO org.apache.hadoop.mapred.LocalJobRunner - map task executor complete.
+[Thread-19] INFO org.apache.hadoop.mapred.LocalJobRunner - Waiting for reduce tasks
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local919380665_0001_r_000000_0
+[pool-4-thread-1] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 2
+[pool-4-thread-1] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[pool-4-thread-1] INFO org.apache.hadoop.yarn.util.ProcfsBasedProcessTree - ProcfsBasedProcessTree currently is supported only on Linux.
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : null
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.ReduceTask - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@4866cac9
+[pool-4-thread-1] WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl - JobTracker metrics system already initialized!
+[pool-4-thread-1] INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - MergerManager: memoryLimit=3006477056, maxSingleShuffleLimit=751619264, mergeThreshold=1984274944, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+[EventFetcher for fetching Map Completion Events] INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher - attempt_local919380665_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+[localfetcher#1] INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher - localfetcher#1 about to shuffle output of map attempt_local919380665_0001_m_000000_0 decomp: 80304 len: 80308 to MEMORY
+[localfetcher#1] INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput - Read 80304 bytes from map-output for attempt_local919380665_0001_m_000000_0
+[localfetcher#1] INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - closeInMemoryFile -> map-output of size: 80304, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->80304
+[EventFetcher for fetching Map Completion Events] INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher - EventFetcher is interrupted.. Returning
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.LocalJobRunner - 1 / 1 copied.
+[pool-4-thread-1] INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Merger - Merging 1 sorted segments
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 1 segments left of total size: 80293 bytes
+[pool-4-thread-1] INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - Merged 1 segments, 80304 bytes to disk to satisfy reduce memory limit
+[pool-4-thread-1] INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - Merging 1 files, 80308 bytes from disk
+[pool-4-thread-1] INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - Merging 0 segments, 0 bytes from memory into reduce
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Merger - Merging 1 sorted segments
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 1 segments left of total size: 80293 bytes
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.LocalJobRunner - 1 / 1 copied.
+[pool-4-thread-1] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Task - Task:attempt_local919380665_0001_r_000000_0 is done. And is in the process of committing
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.LocalJobRunner - 1 / 1 copied.
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Task - Task attempt_local919380665_0001_r_000000_0 is allowed to commit now
+[pool-4-thread-1] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local919380665_0001_r_000000_0' to file:/Users/yokey/Code/CollegeCourse2022/RealTimeCompute/HadoopLegacy/data/output
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.LocalJobRunner - reduce > reduce
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Task - Task 'attempt_local919380665_0001_r_000000_0' done.
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Task - Final Counters for attempt_local919380665_0001_r_000000_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=482195
+		FILE: Number of bytes written=639715
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=4019
+		Reduce shuffle bytes=80308
+		Reduce input records=4019
+		Reduce output records=4019
+		Spilled Records=4019
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=268435456
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters
+		Bytes Written=64786
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.LocalJobRunner - Finishing task: attempt_local919380665_0001_r_000000_0
+[Thread-19] INFO org.apache.hadoop.mapred.LocalJobRunner - reduce task executor complete.
+[main] INFO org.apache.hadoop.mapreduce.Job - Job job_local919380665_0001 running in uber mode : false
+[main] INFO org.apache.hadoop.mapreduce.Job -  map 100% reduce 100%
+[main] INFO org.apache.hadoop.mapreduce.Job - Job job_local919380665_0001 completed successfully
+[main] INFO org.apache.hadoop.mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=803742
+		FILE: Number of bytes written=1134336
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=4000
+		Map output records=36486
+		Map output bytes=467279
+		Map output materialized bytes=80308
+		Input split bytes=155
+		Combine input records=36486
+		Combine output records=4019
+		Reduce input groups=4019
+		Reduce shuffle bytes=80308
+		Reduce input records=4019
+		Reduce output records=4019
+		Spilled Records=8038
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=6
+		Total committed heap usage (bytes)=536870912
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters
+		Bytes Read=321335
+	File Output Format Counters
+		Bytes Written=64786
+
+Process finished with exit code 0
