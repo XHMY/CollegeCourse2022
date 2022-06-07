@@ -24,7 +24,7 @@ object Hello {
   def main(args: Array[String]): Unit = {
     println("Hello, world!")
 //   sparkHello("Yokey Xiao")
-    sparkWordCount(base_local_path + "/src/main/resources/input.txt",
+    sparkWordCount(base_local_path + "/src/main/resources/word.txt",
       base_local_path + "/src/main/resources/output")
   }
 
