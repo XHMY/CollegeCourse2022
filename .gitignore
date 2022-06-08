@@ -10,3 +10,4 @@ RealTimeCompute/.DS_Store
 .DS_Store
 *.lst
 .DS_Store
+*.pyc
