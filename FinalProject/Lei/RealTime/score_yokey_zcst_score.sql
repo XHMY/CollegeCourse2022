@@ -1,10 +1,9 @@
 create table yokey_zcst_score
 (
-    kch   varchar(10) not null comment '课程编号'
-        primary key,
-    kcmc  tinytext    not null comment '课程名称',
-    bfzcj float       not null comment '成绩',
-    type  tinytext    not null comment '课程类型'
+    kch   text null,
+    kcmc  text null,
+    bfzcj int  null,
+    type  text null
 );
 
 INSERT INTO score.yokey_zcst_score (kch, kcmc, bfzcj, type) VALUES ('B2023004', 'Web前端技术', 99, '专业课');
@@ -41,12 +40,3 @@ INSERT INTO score.yokey_zcst_score (kch, kcmc, bfzcj, type) VALUES ('Z2099004', 
 INSERT INTO score.yokey_zcst_score (kch, kcmc, bfzcj, type) VALUES ('Z2099005', '量子计算实践', 99, '专业课');
 INSERT INTO score.yokey_zcst_score (kch, kcmc, bfzcj, type) VALUES ('Z2099007', '爆破实践', 91, '专业课');
 INSERT INTO score.yokey_zcst_score (kch, kcmc, bfzcj, type) VALUES ('Z2099008', '战斗机驾驶', 91, '通识课');
-
-
-create table prof_avg_score
-(
-    bfzcj float    not null comment '成绩',
-    type  tinytext not null comment '课程类型'
-);
-
-INSERT INTO score.prof_avg_score (type, `avg(bfzcj)`) VALUES ('专业课', 93.33333333333333);
