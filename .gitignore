@@ -1,6 +1,5 @@
 .DS_Store
 *.class
-*.xml
 RealTimeCompute/.DS_Store
 */.DS_Store
 .ipynb_checkpoints
@@ -10,4 +9,5 @@ RealTimeCompute/.DS_Store
 .DS_Store
 *.lst
 .DS_Store
+.idea/
 *.pyc
