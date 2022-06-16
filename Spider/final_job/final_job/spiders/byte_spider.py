@@ -38,7 +38,7 @@ class ByteJobSpider(scrapy.Spider):
             "sec-ch-ua-mobile": "?0",
             "sec-ch-ua-platform": "\"macOS\"",
             "website-path": "society",
-            "x-csrf-token": "DiiwpJbBy83YcRMJZ-i00m2vYmwHieMJkK1MrFKLYNA="
+            "x-csrf-token": "BBaAJR1Cdmi3clDCcTebI_l2tgJ992Jy-oTidYfzAHs="
         }
 
         self.cookies = {
@@ -46,8 +46,8 @@ class ByteJobSpider(scrapy.Spider):
             "device-id": "7104259863739680267",
             "channel": "office",
             "platform": "pc",
-            "atsx-csrf-token": "DiiwpJbBy83YcRMJZ-i00m2vYmwHieMJkK1MrFKLYNA%3D",
-            "SLARDAR_WEB_ID": "96ed5b6f-82e7-421a-b767-3a4acd9de0a0"
+            "atsx-csrf-token": "BBaAJR1Cdmi3clDCcTebI_l2tgJ992Jy-oTidYfzAHs%3D",
+            "SLARDAR_WEB_ID": "9c45acc9-38d7-4444-8487-246ff9378e07"
         }
         self.category_list = [6704215882479962371, 6704215864629004552, 6704215913488451847, 6709824272505768200,
                               6709824272514156812, 6704215901438216462, 6850051244971526414, 6794746007419619592,

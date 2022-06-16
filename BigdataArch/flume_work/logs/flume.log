@@ -1,0 +1,295 @@
+11 Jun 2022 16:10:13,483 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider.start:62)  - Configuration provider starting
+11 Jun 2022 16:10:13,495 INFO  [conf-file-poller-0] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider$FileWatcherRunnable.run:138)  - Reloading configuration file:conf/hive.conf
+11 Jun 2022 16:10:13,501 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+11 Jun 2022 16:10:13,502 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r4
+11 Jun 2022 16:10:13,502 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+11 Jun 2022 16:10:13,503 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+11 Jun 2022 16:10:13,503 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+11 Jun 2022 16:10:13,503 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+11 Jun 2022 16:10:13,503 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+11 Jun 2022 16:10:13,504 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:c1
+11 Jun 2022 16:10:13,505 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+11 Jun 2022 16:10:13,505 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:c1
+11 Jun 2022 16:10:13,505 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+11 Jun 2022 16:10:13,505 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+11 Jun 2022 16:10:13,506 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r4
+11 Jun 2022 16:10:13,506 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:c1
+11 Jun 2022 16:10:13,506 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r4
+11 Jun 2022 16:10:13,506 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1117)  - Added sinks: k1 Agent: a1
+11 Jun 2022 16:10:13,506 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r4
+11 Jun 2022 16:10:13,507 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+11 Jun 2022 16:10:13,507 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r4
+11 Jun 2022 16:10:13,507 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+11 Jun 2022 16:10:13,507 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+11 Jun 2022 16:10:13,507 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r4
+11 Jun 2022 16:10:13,507 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+11 Jun 2022 16:10:13,508 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+11 Jun 2022 16:10:13,508 WARN  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.validateConfigFilterSet:623)  - Agent configuration for 'a1' has no configfilters.
+11 Jun 2022 16:10:13,520 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration.validateConfiguration:163)  - Post-validation flume configuration contains configuration for agents: [a1]
+11 Jun 2022 16:10:13,520 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:151)  - Creating channels
+11 Jun 2022 16:10:13,526 INFO  [conf-file-poller-0] (org.apache.flume.channel.DefaultChannelFactory.create:42)  - Creating instance of channel c1 type memory
+11 Jun 2022 16:10:13,530 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:205)  - Created channel c1
+11 Jun 2022 16:10:13,531 INFO  [conf-file-poller-0] (org.apache.flume.source.DefaultSourceFactory.create:41)  - Creating instance of source r4, type TAILDIR
+11 Jun 2022 16:10:13,544 INFO  [conf-file-poller-0] (org.apache.flume.sink.DefaultSinkFactory.create:42)  - Creating instance of sink: k1, type: hive
+11 Jun 2022 16:10:13,552 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.getConfiguration:120)  - Channel c1 connected to [r4, k1]
+11 Jun 2022 16:10:13,554 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:162)  - Starting new configuration:{ sourceRunners:{r4=PollableSourceRunner: { source:Taildir source: { positionFile: /Users/yokey/.flume/taildir_position.json, skipToEnd: false, byteOffsetHeader: false, idleTimeout: 120000, writePosInterval: 3000 } counterGroup:{ name:null counters:{} } }} sinkRunners:{k1=SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@3e0e449c counterGroup:{ name:null counters:{} } }} channels:{c1=org.apache.flume.channel.MemoryChannel{name: c1}} }
+11 Jun 2022 16:10:13,554 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:169)  - Starting Channel c1
+11 Jun 2022 16:10:13,556 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: CHANNEL, name: c1: Successfully registered new MBean.
+11 Jun 2022 16:10:13,556 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: CHANNEL, name: c1 started
+11 Jun 2022 16:10:13,557 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:196)  - Starting Sink k1
+11 Jun 2022 16:10:13,557 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:207)  - Starting Source r4
+11 Jun 2022 16:10:13,557 INFO  [lifecycleSupervisor-1-3] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: SINK, name: k1: Successfully registered new MBean.
+11 Jun 2022 16:10:13,557 INFO  [lifecycleSupervisor-1-3] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: SINK, name: k1 started
+11 Jun 2022 16:10:13,557 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.source.taildir.TaildirSource.start:94)  - r4 TaildirSource source starting with directory: {f1=/usr/local/var/log/nginx/access.log}
+11 Jun 2022 16:10:13,558 INFO  [lifecycleSupervisor-1-3] (org.apache.flume.sink.hive.HiveSink.start:502)  - k1: Hive Sink k1 started
+11 Jun 2022 16:10:13,563 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.source.taildir.ReliableTaildirEventReader.<init>:84)  - taildirCache: [{filegroup='f1', filePattern='/usr/local/var/log/nginx/access.log', cached=true}]
+11 Jun 2022 16:10:13,564 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.source.taildir.ReliableTaildirEventReader.<init>:85)  - headerTable: {}
+11 Jun 2022 16:10:13,570 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.source.taildir.ReliableTaildirEventReader.openFile:290)  - Opening file: /usr/local/var/log/nginx/access.log, inode: 72303316, pos: 0
+11 Jun 2022 16:10:13,571 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.source.taildir.ReliableTaildirEventReader.<init>:95)  - Updating position from position file: /Users/yokey/.flume/taildir_position.json
+11 Jun 2022 16:10:13,577 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.source.taildir.TailFile.updatePos:126)  - Updated position, file: /usr/local/var/log/nginx/access.log, inode: 72303316, pos: 942
+11 Jun 2022 16:10:13,579 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: SOURCE, name: r4: Successfully registered new MBean.
+11 Jun 2022 16:10:13,579 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: SOURCE, name: r4 started
+11 Jun 2022 16:10:23,601 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hive.HiveSink.getOrCreateWriter:344)  - k1: Creating Writer to Hive end point : {metaStoreUri='thrift://127.0.0.1:9083', database='logsdb', table='weblogs', partitionVals=[22-06-11-16-10] }
+11 Jun 2022 16:10:24,042 INFO  [hive-k1-call-runner-0] (org.apache.hive.hcatalog.common.HiveClientCache.<init>:119)  - Initializing cache: eviction-timeout=120 initial-capacity=50 maximum-capacity=50
+11 Jun 2022 16:10:24,113 WARN  [hive-k1-call-runner-0] (org.apache.hadoop.util.NativeCodeLoader.<clinit>:60)  - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+11 Jun 2022 16:10:26,238 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hive.HiveWriter.nextTxnBatch:398)  - Acquired Transaction batch TxnId/WriteIds=[668/201...767/300] on endPoint = {metaStoreUri='thrift://127.0.0.1:9083', database='logsdb', table='weblogs', partitionVals=[22-06-11-16-10] };  TxnStatus[OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO] LastUsed txnid:0
+11 Jun 2022 16:10:32,234 INFO  [hive-k1-call-runner-0] (org.apache.orc.impl.PhysicalFsWriter.<init>:92)  - ORC writer created for path: hdfs://0.0.0.0:9000/user/hive/warehouse/logsdb.db/weblogs/log_time=22-06-11-16-10/delta_0000201_0000300/bucket_00003 with stripeSize: 8388608 blockSize: 268435456 compression: ZLIB bufferSize: 32768
+11 Jun 2022 16:10:32,240 INFO  [hive-k1-call-runner-0] (org.apache.orc.impl.OrcCodecPool.getCodec:56)  - Got brand-new codec ZLIB
+11 Jun 2022 16:10:32,273 INFO  [hive-k1-call-runner-0] (org.apache.orc.impl.WriterImpl.<init>:196)  - ORC writer created for path: hdfs://0.0.0.0:9000/user/hive/warehouse/logsdb.db/weblogs/log_time=22-06-11-16-10/delta_0000201_0000300/bucket_00003 with stripeSize: 8388608 blockSize: 268435456 compression: ZLIB bufferSize: 32768
+11 Jun 2022 16:10:32,727 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hive.HiveWriter.commitTxn:337)  - Committing Txn 668 on EndPoint: {metaStoreUri='thrift://127.0.0.1:9083', database='logsdb', table='weblogs', partitionVals=[22-06-11-16-10] }
+11 Jun 2022 16:12:33,649 INFO  [PollableSourceRunner-TaildirSource-r4] (org.apache.flume.source.taildir.TaildirSource.closeTailFiles:307)  - Closed file: /usr/local/var/log/nginx/access.log, inode: 72303316, pos: 1118
+11 Jun 2022 16:24:23,465 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:125)  - Shutting down configuration: { sourceRunners:{r4=PollableSourceRunner: { source:Taildir source: { positionFile: /Users/yokey/.flume/taildir_position.json, skipToEnd: false, byteOffsetHeader: false, idleTimeout: 120000, writePosInterval: 3000 } counterGroup:{ name:null counters:{runner.backoffs.consecutive=172, runner.polls=172, runner.backoffs=172} } }} sinkRunners:{k1=SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@3e0e449c counterGroup:{ name:null counters:{runner.backoffs.consecutive=105, runner.backoffs=107} } }} channels:{c1=org.apache.flume.channel.MemoryChannel{name: c1}} }
+11 Jun 2022 16:24:23,469 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:129)  - Stopping Source r4
+11 Jun 2022 16:24:23,469 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.unsupervise:169)  - Stopping component: PollableSourceRunner: { source:Taildir source: { positionFile: /Users/yokey/.flume/taildir_position.json, skipToEnd: false, byteOffsetHeader: false, idleTimeout: 120000, writePosInterval: 3000 } counterGroup:{ name:null counters:{runner.backoffs.consecutive=172, runner.polls=172, runner.backoffs=172} } }
+11 Jun 2022 16:24:23,470 INFO  [PollableSourceRunner-TaildirSource-r4] (org.apache.flume.source.PollableSourceRunner$PollingRunner.run:143)  - Source runner interrupted. Exiting
+11 Jun 2022 16:24:23,473 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: SOURCE, name: r4 stopped
+11 Jun 2022 16:24:23,473 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: SOURCE, name: r4. source.start.time == 1654935013579
+11 Jun 2022 16:24:23,473 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: SOURCE, name: r4. source.stop.time == 1654935863473
+11 Jun 2022 16:24:23,474 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r4. src.append-batch.accepted == 2
+11 Jun 2022 16:24:23,474 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r4. src.append-batch.received == 2
+11 Jun 2022 16:24:23,474 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r4. src.append.accepted == 0
+11 Jun 2022 16:24:23,474 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r4. src.append.received == 0
+11 Jun 2022 16:24:23,474 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r4. src.channel.write.fail == 0
+11 Jun 2022 16:24:23,474 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r4. src.event.read.fail == 0
+11 Jun 2022 16:24:23,475 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r4. src.events.accepted == 2
+11 Jun 2022 16:24:23,475 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r4. src.events.received == 2
+11 Jun 2022 16:24:23,475 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r4. src.generic.processing.fail == 0
+11 Jun 2022 16:24:23,475 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r4. src.open-connection.count == 0
+11 Jun 2022 16:24:23,475 INFO  [agent-shutdown-hook] (org.apache.flume.source.taildir.TaildirSource.stop:144)  - Taildir source r4 stopped. Metrics: SOURCE:r4{src.events.accepted=2, src.open-connection.count=0, src.append.received=0, src.channel.write.fail=0, src.append-batch.received=2, src.generic.processing.fail=0, src.append-batch.accepted=2, src.append.accepted=0, src.events.received=2, src.event.read.fail=0}
+11 Jun 2022 16:24:23,476 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:139)  - Stopping Sink k1
+11 Jun 2022 16:24:23,476 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.unsupervise:169)  - Stopping component: SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@3e0e449c counterGroup:{ name:null counters:{runner.backoffs.consecutive=105, runner.backoffs=107} } }
+11 Jun 2022 16:24:27,938 WARN  [agent-shutdown-hook] (org.apache.flume.sink.hive.HiveWriter.abortCurrTxnHelper:303)  - Unable to abort transaction 669
+org.apache.hive.hcatalog.streaming.TransactionError: Unable to abort transaction id : 669: Could not connect to meta store using any of the URIs provided. Most recent failure: org.apache.thrift.transport.TTransportException: java.net.ConnectException: Connection refused
+	at org.apache.thrift.transport.TSocket.open(TSocket.java:226)
+	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.open(HiveMetaStoreClient.java:516)
+	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.reconnect(HiveMetaStoreClient.java:379)
+	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient$1.run(RetryingMetaStoreClient.java:187)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:565)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.invoke(RetryingMetaStoreClient.java:183)
+	at jdk.proxy2/jdk.proxy2.$Proxy9.rollbackTxn(Unknown Source)
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.abortImpl(HiveEndPoint.java:972)
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.abort(HiveEndPoint.java:936)
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.abort(HiveEndPoint.java:931)
+	at org.apache.flume.sink.hive.HiveWriter$4.call(HiveWriter.java:296)
+	at org.apache.flume.sink.hive.HiveWriter$4.call(HiveWriter.java:293)
+	at org.apache.flume.sink.hive.HiveWriter$11.call(HiveWriter.java:428)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.thrift.transport.TSocket.open(TSocket.java:221)
+	... 18 more
+
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.abortImpl(HiveEndPoint.java:983)
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.abort(HiveEndPoint.java:936)
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.abort(HiveEndPoint.java:931)
+	at org.apache.flume.sink.hive.HiveWriter$4.call(HiveWriter.java:296)
+	at org.apache.flume.sink.hive.HiveWriter$4.call(HiveWriter.java:293)
+	at org.apache.flume.sink.hive.HiveWriter$11.call(HiveWriter.java:428)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: MetaException(message:Could not connect to meta store using any of the URIs provided. Most recent failure: org.apache.thrift.transport.TTransportException: java.net.ConnectException: Connection refused
+	at org.apache.thrift.transport.TSocket.open(TSocket.java:226)
+	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.open(HiveMetaStoreClient.java:516)
+	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.reconnect(HiveMetaStoreClient.java:379)
+	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient$1.run(RetryingMetaStoreClient.java:187)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:565)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.invoke(RetryingMetaStoreClient.java:183)
+	at jdk.proxy2/jdk.proxy2.$Proxy9.rollbackTxn(Unknown Source)
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.abortImpl(HiveEndPoint.java:972)
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.abort(HiveEndPoint.java:936)
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.abort(HiveEndPoint.java:931)
+	at org.apache.flume.sink.hive.HiveWriter$4.call(HiveWriter.java:296)
+	at org.apache.flume.sink.hive.HiveWriter$4.call(HiveWriter.java:293)
+	at org.apache.flume.sink.hive.HiveWriter$11.call(HiveWriter.java:428)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.thrift.transport.TSocket.open(TSocket.java:221)
+	... 18 more
+)
+	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.open(HiveMetaStoreClient.java:565)
+	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.reconnect(HiveMetaStoreClient.java:379)
+	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient$1.run(RetryingMetaStoreClient.java:187)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:565)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.invoke(RetryingMetaStoreClient.java:183)
+	at jdk.proxy2/jdk.proxy2.$Proxy9.rollbackTxn(Unknown Source)
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.abortImpl(HiveEndPoint.java:972)
+	... 9 more
+11 Jun 2022 16:24:27,942 WARN  [agent-shutdown-hook] (org.apache.flume.sink.hive.HiveWriter.abortRemainingTxns:282)  - Error when aborting remaining transactions in batch TxnId/WriteIds=[668/201...767/300] on endPoint = {metaStoreUri='thrift://127.0.0.1:9083', database='logsdb', table='weblogs', partitionVals=[22-06-11-16-10] };  TxnStatus[COOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO] LastUsed txnid:670
+org.apache.hive.hcatalog.streaming.TransactionError: Unable to acquire lock on {metaStoreUri='thrift://127.0.0.1:9083', database='logsdb', table='weblogs', partitionVals=[22-06-11-16-10] }: Cannot write to null outputStream
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.beginNextTransactionImpl(HiveEndPoint.java:714)
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.beginNextTransaction(HiveEndPoint.java:678)
+	at org.apache.flume.sink.hive.HiveWriter$3.call(HiveWriter.java:275)
+	at org.apache.flume.sink.hive.HiveWriter$3.call(HiveWriter.java:272)
+	at org.apache.flume.sink.hive.HiveWriter$11.call(HiveWriter.java:428)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.thrift.transport.TTransportException: Cannot write to null outputStream
+	at org.apache.thrift.transport.TIOStreamTransport.write(TIOStreamTransport.java:142)
+	at org.apache.thrift.protocol.TBinaryProtocol.writeI32(TBinaryProtocol.java:178)
+	at org.apache.thrift.protocol.TBinaryProtocol.writeMessageBegin(TBinaryProtocol.java:106)
+	at org.apache.thrift.TServiceClient.sendBase(TServiceClient.java:70)
+	at org.apache.thrift.TServiceClient.sendBase(TServiceClient.java:62)
+	at org.apache.hadoop.hive.metastore.api.ThriftHiveMetastore$Client.send_lock(ThriftHiveMetastore.java:5293)
+	at org.apache.hadoop.hive.metastore.api.ThriftHiveMetastore$Client.lock(ThriftHiveMetastore.java:5285)
+	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.lock(HiveMetaStoreClient.java:2568)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.invoke(RetryingMetaStoreClient.java:208)
+	at jdk.proxy2/jdk.proxy2.$Proxy9.lock(Unknown Source)
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.beginNextTransactionImpl(HiveEndPoint.java:709)
+	... 8 more
+11 Jun 2022 16:24:27,949 INFO  [agent-shutdown-hook] (org.apache.flume.sink.hive.HiveWriter.closeTxnBatch:407)  - Closing Txn Batch TxnId/WriteIds=[668/201...767/300] on endPoint = {metaStoreUri='thrift://127.0.0.1:9083', database='logsdb', table='weblogs', partitionVals=[22-06-11-16-10] };  TxnStatus[COOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO] LastUsed txnid:670.
+11 Jun 2022 16:24:31,962 WARN  [agent-shutdown-hook] (org.apache.flume.sink.hive.HiveWriter.closeTxnBatch:418)  - Error closing Txn Batch TxnId/WriteIds=[668/201...767/300] on endPoint = {metaStoreUri='thrift://127.0.0.1:9083', database='logsdb', table='weblogs', partitionVals=[22-06-11-16-10] };  TxnStatus[COOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO] LastUsed txnid:670
+org.apache.hive.hcatalog.streaming.TransactionError: Unable to abort transaction id : 670: Could not connect to meta store using any of the URIs provided. Most recent failure: org.apache.thrift.transport.TTransportException: java.net.ConnectException: Connection refused
+	at org.apache.thrift.transport.TSocket.open(TSocket.java:226)
+	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.open(HiveMetaStoreClient.java:516)
+	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.reconnect(HiveMetaStoreClient.java:379)
+	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient$1.run(RetryingMetaStoreClient.java:187)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:565)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.invoke(RetryingMetaStoreClient.java:183)
+	at jdk.proxy2/jdk.proxy2.$Proxy9.rollbackTxn(Unknown Source)
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.abortImpl(HiveEndPoint.java:965)
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.close(HiveEndPoint.java:1026)
+	at org.apache.flume.sink.hive.HiveWriter$10.call(HiveWriter.java:411)
+	at org.apache.flume.sink.hive.HiveWriter$10.call(HiveWriter.java:408)
+	at org.apache.flume.sink.hive.HiveWriter$11.call(HiveWriter.java:428)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.thrift.transport.TSocket.open(TSocket.java:221)
+	... 17 more
+
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.abortImpl(HiveEndPoint.java:983)
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.close(HiveEndPoint.java:1026)
+	at org.apache.flume.sink.hive.HiveWriter$10.call(HiveWriter.java:411)
+	at org.apache.flume.sink.hive.HiveWriter$10.call(HiveWriter.java:408)
+	at org.apache.flume.sink.hive.HiveWriter$11.call(HiveWriter.java:428)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: MetaException(message:Could not connect to meta store using any of the URIs provided. Most recent failure: org.apache.thrift.transport.TTransportException: java.net.ConnectException: Connection refused
+	at org.apache.thrift.transport.TSocket.open(TSocket.java:226)
+	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.open(HiveMetaStoreClient.java:516)
+	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.reconnect(HiveMetaStoreClient.java:379)
+	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient$1.run(RetryingMetaStoreClient.java:187)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:565)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.invoke(RetryingMetaStoreClient.java:183)
+	at jdk.proxy2/jdk.proxy2.$Proxy9.rollbackTxn(Unknown Source)
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.abortImpl(HiveEndPoint.java:965)
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.close(HiveEndPoint.java:1026)
+	at org.apache.flume.sink.hive.HiveWriter$10.call(HiveWriter.java:411)
+	at org.apache.flume.sink.hive.HiveWriter$10.call(HiveWriter.java:408)
+	at org.apache.flume.sink.hive.HiveWriter$11.call(HiveWriter.java:428)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.thrift.transport.TSocket.open(TSocket.java:221)
+	... 17 more
+)
+	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.open(HiveMetaStoreClient.java:565)
+	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.reconnect(HiveMetaStoreClient.java:379)
+	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient$1.run(RetryingMetaStoreClient.java:187)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:565)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.invoke(RetryingMetaStoreClient.java:183)
+	at jdk.proxy2/jdk.proxy2.$Proxy9.rollbackTxn(Unknown Source)
+	at org.apache.hive.hcatalog.streaming.HiveEndPoint$TransactionBatchImpl.abortImpl(HiveEndPoint.java:965)
+	... 8 more
+11 Jun 2022 16:24:31,963 INFO  [agent-shutdown-hook] (org.apache.flume.sink.hive.HiveWriter.closeConnection:319)  - Closing connection to EndPoint : {metaStoreUri='thrift://127.0.0.1:9083', database='logsdb', table='weblogs', partitionVals=[22-06-11-16-10] }
+11 Jun 2022 16:24:31,965 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: SINK, name: k1 stopped
+11 Jun 2022 16:24:31,965 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: SINK, name: k1. sink.start.time == 1654935013557
+11 Jun 2022 16:24:31,965 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: SINK, name: k1. sink.stop.time == 1654935871965
+11 Jun 2022 16:24:31,966 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.batch.complete == 0
+11 Jun 2022 16:24:31,966 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.batch.empty == 107
+11 Jun 2022 16:24:31,966 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.batch.underflow == 1
+11 Jun 2022 16:24:31,966 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.channel.read.fail == 0
+11 Jun 2022 16:24:31,966 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.connection.closed.count == 1
+11 Jun 2022 16:24:31,966 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.connection.creation.count == 1
+11 Jun 2022 16:24:31,966 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.connection.failed.count == 3
+11 Jun 2022 16:24:31,967 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.event.drain.attempt == 2
+11 Jun 2022 16:24:31,967 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.event.drain.sucess == 2
+11 Jun 2022 16:24:31,967 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.event.write.fail == 0
+11 Jun 2022 16:24:31,967 INFO  [agent-shutdown-hook] (org.apache.flume.sink.hive.HiveSink.stop:488)  - Hive Sink k1 stopped
+11 Jun 2022 16:24:31,967 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:149)  - Stopping Channel c1
+11 Jun 2022 16:24:31,967 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.unsupervise:169)  - Stopping component: org.apache.flume.channel.MemoryChannel{name: c1}
+11 Jun 2022 16:24:31,967 INFO  [lifecycleSupervisor-1-4] (org.apache.flume.lifecycle.LifecycleSupervisor$MonitorRunnable.run:228)  - Component has already been stopped SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@3e0e449c counterGroup:{ name:null counters:{runner.interruptions=1, runner.backoffs.consecutive=105, runner.backoffs=107} } }
+11 Jun 2022 16:24:31,969 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: CHANNEL, name: c1 stopped
+11 Jun 2022 16:24:31,970 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: CHANNEL, name: c1. channel.start.time == 1654935013556
+11 Jun 2022 16:24:31,970 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: CHANNEL, name: c1. channel.stop.time == 1654935871969
+11 Jun 2022 16:24:31,970 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c1. channel.capacity == 1000
+11 Jun 2022 16:24:31,970 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c1. channel.current.size == 0
+11 Jun 2022 16:24:31,970 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c1. channel.event.put.attempt == 2
+11 Jun 2022 16:24:31,970 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c1. channel.event.put.success == 2
+11 Jun 2022 16:24:31,970 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c1. channel.event.take.attempt == 110
+11 Jun 2022 16:24:31,971 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c1. channel.event.take.success == 2
+11 Jun 2022 16:24:31,971 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.stop:78)  - Stopping lifecycle supervisor 17
+11 Jun 2022 16:24:31,973 INFO  [agent-shutdown-hook] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider.stop:84)  - Configuration provider stopping
