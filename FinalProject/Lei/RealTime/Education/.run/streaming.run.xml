@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="streaming" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="streaming" />
+    <module name="Education" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
