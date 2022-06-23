@@ -53,15 +53,9 @@ d3.csv("data.csv").then( function(data) {
 
 })
 
-svg.append('text')
-    .attr('x', - (height / 2) - margin)
-    .attr('y', margin / 2.4)
-    .attr('transform', 'rotate(-90)')
-    .attr('text-anchor', 'middle')
-    .text('科目')
 
 svg.append('text')
-    .attr('x', width / 2 + margin)
-    .attr('y', 10)
+    .attr('x', width / 2 + margin.left)
+    .attr('y', -20)
     .attr('text-anchor', 'middle')
-    .text('Most loved programming languages in 2018')
+    .text('第三学年第一学期成绩信息')
