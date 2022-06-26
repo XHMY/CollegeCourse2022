@@ -53,6 +53,20 @@ d3.csv("data.csv").then( function(data) {
     .attr("width", d => x(d.bfzcj))
     .attr("height", y.bandwidth())
     .attr("fill", "#00BFFF")
+    .on("mouseover", function(d) {
+      d3.select(this)
+        .attr("fill", "orange")
+        .attr("stroke", "red")
+        .attr("stroke-width", "1");
+    }
+    )
+    .on("mouseout", function(d) {
+      d3.select(this)
+        .attr("fill", "#00BFFF")
+        .attr("stroke", "none")
+        .attr("stroke-width", "0");
+    }
+    );
   
   // Add a label to the right of each bar
   svg.selectAll("myText")
@@ -62,42 +76,13 @@ d3.csv("data.csv").then( function(data) {
     .attr("y", d => y(d.kcmc) + y.bandwidth() / 2)
     .attr("font-size", "12px")
     .text(d => d.bfzcj)
-    .attr("fill", "grey")
+    .attr("fill", "blue")
     .attr("text-anchor", "start");
 
-  // // Mouse reactive events
-  // svg.selectAll("myRect")
-  //   .on("mouseover", function(d) {
-  //     d3.select(this)
-  //       .attr("fill", "orange");
-  //     d3.select("#tooltip")
-  //       .style("left", d3.event.pageX + "px")
-  //       .style("top", d3.event.pageY + "px")
-  //       .select("#value")
-  //       .text(d.kcmc + ": " + d.bfzcj);
-  //     d3.select("#tooltip").classed("hidden", false);
-  //   })
-  //   .on("mouseout", function(d) {
-  //     d3.select(this)
-  //       .attr("fill", "#00BFFF");
-  //     d3.select("#tooltip").classed("hidden", true);
-  //   })
-  
-  // // Tooltip
-  // svg.append("text")
-  //   .attr("id", "tooltip")
-  //   .attr("x", width / 2)
-  //   .attr("y", height / 2)
-  //   .attr("font-size", "12px")  
-  //   .attr("text-anchor", "middle")
-  //   .attr("fill", "grey")
-  //   .attr("class", "hidden")
-  //   .text("");
-
+  svg.append("text")
+    .attr("x", width / 2)
+    .attr("y", 0 - (margin.top / 2))
+    .attr("text-anchor", "middle")
+    .style("font-size", "20px")
+    .text("曾一凡大三上学期成绩统计");
 })
-
-svg.append('text')
-    .attr('x', width / 2 + margin.left)
-    .attr('y', -20)
-    .attr('text-anchor', 'middle')
-    .text('第三学年第一学期成绩信息')
