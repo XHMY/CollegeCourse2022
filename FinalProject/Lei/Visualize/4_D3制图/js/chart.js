@@ -1,9 +1,11 @@
+// require D3.js V7
+
 // set the dimensions and margins of the graph
-const margin = {top: 50, right: 30, bottom: 40, left: 200},
+const margin = {top: 50, right: 35, bottom: 40, left: 200},
     width = 800 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
-// append the svg object to the body of the page
+// draw bar chart
 const svg = d3.select("body")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -18,6 +20,7 @@ d3.csv("data.csv").then( function(data) {
   const x = d3.scaleLinear()
     .domain([0, 100])
     .range([ 0, width]);
+    
   svg.append("g")
     .attr("transform", `translate(0, ${height})`)
     .call(d3.axisBottom(x))
@@ -50,9 +53,48 @@ d3.csv("data.csv").then( function(data) {
     .attr("width", d => x(d.bfzcj))
     .attr("height", y.bandwidth())
     .attr("fill", "#00BFFF")
+  
+  // Add a label to the right of each bar
+  svg.selectAll("myText")
+    .data(data)
+    .join("text")
+    .attr("x", d => x(d.bfzcj) + 5)
+    .attr("y", d => y(d.kcmc) + y.bandwidth() / 2)
+    .attr("font-size", "12px")
+    .text(d => d.bfzcj)
+    .attr("fill", "grey")
+    .attr("text-anchor", "start");
+
+  // // Mouse reactive events
+  // svg.selectAll("myRect")
+  //   .on("mouseover", function(d) {
+  //     d3.select(this)
+  //       .attr("fill", "orange");
+  //     d3.select("#tooltip")
+  //       .style("left", d3.event.pageX + "px")
+  //       .style("top", d3.event.pageY + "px")
+  //       .select("#value")
+  //       .text(d.kcmc + ": " + d.bfzcj);
+  //     d3.select("#tooltip").classed("hidden", false);
+  //   })
+  //   .on("mouseout", function(d) {
+  //     d3.select(this)
+  //       .attr("fill", "#00BFFF");
+  //     d3.select("#tooltip").classed("hidden", true);
+  //   })
+  
+  // // Tooltip
+  // svg.append("text")
+  //   .attr("id", "tooltip")
+  //   .attr("x", width / 2)
+  //   .attr("y", height / 2)
+  //   .attr("font-size", "12px")  
+  //   .attr("text-anchor", "middle")
+  //   .attr("fill", "grey")
+  //   .attr("class", "hidden")
+  //   .text("");
 
 })
-
 
 svg.append('text')
     .attr('x', width / 2 + margin.left)
