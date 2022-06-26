@@ -22,7 +22,7 @@ object streaming {
     val ssc = new StreamingContext(conf, Seconds(3))
 
     val lines = ssc.socketTextStream("localhost", 9999) // 创建DStream，使用 socket 类型的数据源，本地端口号为 9999
-//    val lines = ssc.textFileStream("src/main/resources/") // 创建DStream，本地文件夹作为数据源
+//    val lines = ssc.textFileStream("src/main/resources/") // 创建DStream，本地文件夹作为数据源（使用 src/main/java/FeedSteaming.java 实时生成数据）
 
     lines.foreachRDD(rdd => {
       val spark = SparkSession.builder.config(rdd.sparkContext.getConf).getOrCreate() // 创建 SparkSession
