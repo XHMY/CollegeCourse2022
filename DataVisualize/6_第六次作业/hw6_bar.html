@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GDP 展示作业</title>
+    <center>
+        <font size="8"><strong>GDP 展示作业</strong></font>
+    </center>
+    <script src="https://d3js.org/d3.v4.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1>条形图</h1>
+        <div id="my_dataviz"></div>
+    </center>
+
+
+</body>
+<script>
+    var color = ['#ff3300', '#ff6600', '#ff9900', '#ffcc00', '#ffff00', '#ccff00', '#99ff00', '#66ff00', '#33ff00', '#00ff00', '#00ff33', '#00ff66', '#00ff99', '#00ffcc', '#00ffff', '#00ccff', '#0099ff', '#0066ff', '#0033ff', '#0000ff', '#3300ff', '#6600ff', '#9900ff', '#cc00ff', '#ff00ff', '#ff00cc', '#ff0099', '#ff0066', '#ff0033'];
+
+    // set the dimensions and margins of the graph
+    var margin = {top: 20, right: 150, bottom: 40, left: 150},
+        width = 800 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
+
+    // append the svg object to the body of the page
+    var svg = d3.select("#my_dataviz")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+    // Parse the Data
+    d3.csv("NationGDP.csv", function(data) {
+
+        // Add X axis
+        var x = d3.scaleLinear()
+            .domain([0, 25])
+            .range([ 0, width]);
+        svg.append("g")
+            .attr("transform", "translate(0," + height + ")")
+            .call(d3.axisBottom(x))
+            .selectAll("text")
+            .attr("transform", "translate(-10,5)rotate(-45)")
+            .text(function(d) {
+                return d;
+            });
+
+        console.log(data)
+
+
+        // Y axis
+        var y = d3.scaleBand()
+            .range([ 0, height ])
+            .domain(data.map(function(d) { return d.国家;}))
+            .padding(.2);
+        svg.append("g")
+            .call(d3.axisLeft(y))
+            .selectAll("text")
+            .style("font-size", "13px")
+
+        //Bars
+        svg.selectAll("myRect")
+            .data(data)
+            .enter()
+            .append("rect")
+            .attr("x", x(0) )
+            .attr("y", function(d) { return y(d.国家); })
+            .attr("width", function(d) { return x(d.GDP); })
+            .attr("height", y.bandwidth() )
+            .attr("fill", function (d,i) {
+                return color[i];
+            })
+
+        svg.selectAll("mytext")
+            .data(data)
+            .enter()
+            .append("text")
+            .text(function(d) {
+                return d.GDP;
+            })
+            .attr("y", function(d, i) {
+                return i * (height / data.length)+25;
+            })
+            .attr("x", function(d, i) {
+                return width-10 + (d.GDP * 2);
+            })
+            .attr("fill", function (d,i) {
+                return color[i];
+            })
+    })
+
+</script>
+
+</html>
